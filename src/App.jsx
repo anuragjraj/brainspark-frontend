@@ -1158,7 +1158,7 @@ export default function BrainSparkAI(){
           <button onClick={()=>setScreen("settings")} style={{display:"flex",alignItems:"center",gap:8,padding:"9px 12px",borderRadius:10,border:"none",cursor:"pointer",fontWeight:700,fontSize:13,textAlign:"left",background:screen==="settings"?"#EEF2FF":"transparent",color:screen==="settings"?"#6366F1":"#475569",fontFamily:"'Nunito',sans-serif"}}><Settings size={15}/>Settings</button>
         </aside>
 
-        <main style={{flex:1,padding:"22px 18px",maxWidth:920,paddingBottom:88}}>
+        <main style={{flex:1, padding:"22px 32px", paddingBottom:88, minWidth:0}}>
           <div style={{animation:"slideUp .25s ease-out"}}>
             {screen==="app"&&tab==="doubt" && <DoubtSolver onXP={v=>setXp(p=>p+v)}/>}
             {screen==="app"&&tab==="quiz"  && <QuizGenerator onXP={v=>setXp(p=>p+v)}/>}
